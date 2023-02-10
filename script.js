@@ -19,7 +19,7 @@ function handleRangePrice() {
   let margem = (lucro / currentPrice) * 100;
   let base = (lucro * 100) / precoCusto;
 
-  textNewPrice.textContent = `Novo preço R$:${currentPrice}`;
+  textNewPrice.textContent = `Novo preço: R$${currentPrice}`;
   textMargemNew.textContent = `Margem: ${margem.toFixed(1)}%`;
   textBaseNew.textContent = `Base: ${base.toFixed(1)}%`;
 
@@ -36,6 +36,8 @@ function handleVendaChange(evnt) {
 
   textMargemDefault.textContent = `Margem: ${margem.toFixed(1)}%`;
   textBaseDefault.textContent = `Base: ${base.toFixed(1)}%`;
+  inputRange.value = precoVenda;
+  textNewPrice.textContent = `Novo preço: R$${precoVenda}`;
 
 }
 
