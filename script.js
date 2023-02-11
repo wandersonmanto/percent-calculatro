@@ -37,6 +37,7 @@ function handleVendaChange(evnt) {
   textMargemDefault.textContent = `Margem: ${margem.toFixed(1)}%`;
   textBaseDefault.textContent = `Base: ${base.toFixed(1)}%`;
   inputRange.value = precoVenda;
+  inputRange.max = precoVenda * 2;
   textNewPrice.textContent = `Novo preço: R$${precoVenda}`;
 
 }
